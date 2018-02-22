@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Nothing+You+Could+Do");
+.noscroll {
+  overflow: hidden; }
+
+body {
+  background-color: #fff; }
+
+.titlebox {
+  margin: 10vh 10vw 5vh 10vw;
+  color: #383c3f;
+  z-index: 1; }
+  .titlebox .map {
+    position: absolute;
+    width: 38vw;
+    height: auto;
+    margin: auto;
+    -webkit-transform: translate(36vw, -4vw);
+            transform: translate(36vw, -4vw);
+    z-index: -1; }
+  .titlebox .title {
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    font-size: 14vw;
+    line-height: 11vw;
+    z-index: 2; }
+    .titlebox .title .author {
+      display: inline-block;
+      width: 40vw;
+      font-family: 'Nothing You Could Do', cursive;
+      font-size: 4vw;
+      text-align: right; }
+
+.postcardgrid {
+  position: relative;
+  width: 95vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 5vw;
+  grid-template-rows: 28vw 28vw 28vw 28vw;
+  grid-template-areas: ". first second ." ". third fourth ." ". fifth sixth ." ". seventh notes .";
+  grid-gap: 0vw 5vw;
+  z-index: 1; }
+  .postcardgrid .postcard {
+    width: 100%;
+    height: 18vw;
+    position: absolute;
+    -webkit-perspective: 1 000px;
+            perspective: 1 000px;
+    cursor: pointer; }
+    .postcardgrid .postcard .pccontainer {
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 1s;
+      transition: -webkit-transform 1s;
+      transition: transform 1s;
+      transition: transform 1s, -webkit-transform 1s; }
+    .postcardgrid .postcard div {
+      margin: 0; }
+    .postcardgrid .postcard img {
+      width: 100%; }
+    .postcardgrid .postcard .pcfront {
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-box-shadow: 0px 0px 10px 0px #999999;
+              box-shadow: 0px 0px 10px 0px #999999; }
+    .postcardgrid .postcard .pcback {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-box-shadow: 0px 0px 10px 0px #ccc;
+              box-shadow: 0px 0px 10px 0px #ccc; }
+  .postcardgrid #first {
+    grid-area: first; }
+  .postcardgrid #first:hover .pccontainer {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  .postcardgrid #second {
+    grid-area: second; }
+  .postcardgrid #second:hover .pccontainer {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  .postcardgrid #third {
+    grid-area: third; }
+  .postcardgrid #third:hover .pccontainer {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  .postcardgrid #fourth {
+    grid-area: fourth; }
+  .postcardgrid #fourth:hover .pccontainer {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  .postcardgrid #fifth {
+    grid-area: fifth; }
+  .postcardgrid #fifth:hover .pccontainer {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  .postcardgrid #sixth {
+    grid-area: sixth; }
+  .postcardgrid #sixth:hover .pccontainer {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  .postcardgrid #seventh {
+    grid-area: seventh; }
+  .postcardgrid #seventh:hover .pccontainer {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+  .postcardgrid #notes {
+    grid-area: notes;
+    -ms-flex-item-align: center;
+        align-self: center;
+    justify-self: center;
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    font-size: 1.5rem; }
+  .postcardgrid #notes:hover span {
+    cursor: pointer;
+    text-decoration: underline; }
+
+.envelope {
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 18px;
+  color: 0, 0, 0, 0.87;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 3; }
+  .envelope .resetbutton {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 2vw;
+    cursor: pointer; }
+  .envelope .letter {
+    padding: 25vh 10vw 5vh 10vw;
+    font-family: 'Crimson Text', serif; }
+  .envelope .letter .title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2rem;
+    line-height: 2rem; }
+  .envelope .letter a {
+    color: black; }
+  .envelope .poem {
+    padding: 5vh 25vw 25vh 25vw;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.5rem; }
+    .envelope .poem p {
+      line-height: 0.5rem; }
+    .envelope .poem .poemtitle {
+      font-size: 2.5rem;
+      line-height: 2rem;
+      text-indent: -2rem; }
+
+#one {
+  display: none;
+  opacity: 0; }
+
+#two {
+  display: none;
+  opacity: 0; }
+
+#three {
+  display: none;
+  opacity: 0; }
+
+#four {
+  display: none;
+  opacity: 0; }
+
+#five {
+  display: none;
+  opacity: 0; }
+
+#six {
+  display: none;
+  opacity: 0; }
+
+#seven {
+  display: none;
+  opacity: 0; }
+
+#bibliography {
+  display: none;
+  opacity: 0; }
+
+@media (max-width: 1000px) {
+  .titlebox {
+    margin: 5vh 5vw 15vh 5vw; }
+    .titlebox .map {
+      width: 44vw;
+      margin: auto;
+      -webkit-transform: translate(41vw, -4vw);
+              transform: translate(41vw, -4vw);
+      z-index: -1; }
+    .titlebox .title {
+      font-size: 16vw;
+      line-height: 13vw; }
+      .titlebox .title .author {
+        position: absolute;
+        display: block;
+        width: 70vw;
+        font-size: 6vw;
+        text-align: left;
+        line-height: 1rem; }
+  .postcardgrid {
+    grid-template-columns: 15vw 1fr 15vw;
+    grid-template-rows: 60vw 60vw 60vw 60vw 60vw 60vw 60vw 60vw;
+    grid-template-areas: ". first ." ". second ." ". third ." ". fourth ." ". fifth ." ". sixth ." ". seventh ." ". notes .";
+    grid-gap: 0vw;
+    -webkit-tap-highlight-color: transparent; }
+    .postcardgrid #notes {
+      font-size: 2rem; }
+  .envelope .resetbutton {
+    width: 3em;
+    height: 3em;
+    -webkit-tap-highlight-color: transparent; }
+  .envelope .resetbutton svg {
+    width: 100%;
+    height: auto; }
+  .envelope .letter {
+    text-align: justify; }
+  .envelope .poem {
+    padding: 5vh 5vw 25vh 5vw;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.25rem;
+    margin-left: 2rem; }
+    .envelope .poem p {
+      line-height: 2rem;
+      text-indent: -2rem;
+      margin: 0.5rem; }
+    .envelope .poem .poemtitle {
+      font-size: 3.5rem;
+      line-height: 3rem;
+      text-indent: 0rem;
+      margin-bottom: 5vw; } }
