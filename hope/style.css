@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800|Merriweather:400,700");
+@font-face {
+  font-family: 'StiluB';
+  src: url("https://static1.squarespace.com/static/5848a289414fb5fbd40fe2a3/t/59f5fc3524a694055a65cfb1/1509293109454/Stilu-Bold.woff") format("woff"); }
+
+#hero {
+  position: relative;
+  width: 90vw;
+  height: 150vh;
+  margin: auto; }
+
+.desktoptext {
+  display: block; }
+
+.mobiletext {
+  display: none; }
+
+a {
+  text-decoration: none; }
+
+.titlebox {
+  position: absolute;
+  width: 100%;
+  font-family: "StiluB", sans-serif;
+  font-weight: 800;
+  margin-top: 20vh; }
+  .titlebox .title {
+    font-size: 8vw;
+    color: #0f2d88;
+    text-align: center; }
+  .titlebox .author {
+    font-size: 2.5vw;
+    font-weight: 800;
+    color: #0f2d88;
+    text-align: right;
+    transform: translate(-5vw, -1vw);
+    text-shadow: 1px 1px 5px white; }
+
+@supports (-webkit-text-stroke: 2px #0f2d88) {
+  .titlebox .title {
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke: 2px #0f2d88; } }
+
+.subbox {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  left: 5vw;
+  margin-top: 55vh;
+  font-family: "StiluB", sans-serif; }
+  .subbox .blurb {
+    width: 40%;
+    font-size: 2vw;
+    font-weight: 400;
+    text-align: left;
+    color: #0f2d88;
+    text-shadow: 1px 1px 5px white; }
+    .subbox .blurb span {
+      color: #e99540; }
+  .subbox .cta {
+    font-weight: 800;
+    font-size: 3.5vw;
+    color: #0f2d88;
+    text-align: center;
+    padding: 0.1em 0.4em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: #0f2d88;
+    border-width: 2px;
+    border-style: solid; }
+  .subbox .cta:hover {
+    background-color: rgba(255, 255, 255, 0.8); }
+
+.blue,
+.orange {
+  position: absolute;
+  width: 85vw; }
+
+.blue img,
+.orange img {
+  width: 100%; }
+
+.bluebg {
+  transform: translate(0.6em, -0.5em); }
+
+.extract {
+  position: relative;
+  width: 50vw;
+  left: 23vw;
+  padding: 0.5em 2em;
+  background-color: rgba(255, 255, 255, 0.83);
+  background-image: url(/s/HopeBBG.png);
+  background-blend-mode: soft-light;
+  font-family: Merriweather, serif;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 180%;
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 2em; }
+  .extract .noindent {
+    text-indent: 0em; }
+  .extract .fullindent {
+    text-indent: 0em;
+    padding: 0 2em; }
+
+.cta2 {
+  display: relative;
+  padding: 0.1em 0.4em;
+  margin: 1em auto;
+  width: 25vw;
+  font-family: "StiluB", sans-serif;
+  font-weight: 800;
+  font-size: 3.5vw;
+  color: #0f2d88;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: #0f2d88;
+  border-width: 2px;
+  border-style: solid; }
+
+@media (max-width: 1000px) {
+  #hero {
+    margin-top: 5vh;
+    height: 90vh; }
+  .desktoptext {
+    display: none; }
+  .mobiletext {
+    display: block; }
+  .blue,
+  .orange {
+    width: 150vw;
+    left: -60vw; }
+  .titlebox {
+    margin-top: 0vh; }
+    .titlebox .title {
+      -webkit-text-stroke: 1px #0f2d88;
+      font-size: 18vw;
+      text-align: left;
+      line-height: 110%; }
+    .titlebox .author {
+      font-size: 6vw;
+      width: 40vw;
+      margin-left: 50vw;
+      transform: translate(-2vw, -16.5vw);
+      text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5); }
+  .subbox {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60%; }
+    .subbox .blurb {
+      order: 2;
+      width: 100%;
+      margin-top: 5vh;
+      font-size: 5vw;
+      text-align: center;
+      text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.8); }
+    .subbox .cta {
+      order: 1;
+      font-size: 10vw;
+      margin-top: 10vh; }
+    .subbox .cta:hover {
+      background-color: rgba(255, 255, 255, 0.5); }
+  .extract {
+    width: 88vw;
+    left: 0vw;
+    padding: 0.01em 1em;
+    border-width: 1px;
+    font-size: 90%;
+    background-size: 25%; }
+  .cta2 {
+    font-size: 8vw;
+    width: 50vw; } }
