@@ -1,0 +1,257 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  100% {
+    -webkit-transform: rotateY(359deg);
+            transform: rotateY(359deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  100% {
+    -webkit-transform: rotateY(359deg);
+            transform: rotateY(359deg); } }
+
+@-webkit-keyframes pulse {
+  0% {
+    outline: 1px solid red; }
+  100% {
+    outline: 10px solid rgba(255, 0, 0, 0.01); } }
+
+@keyframes pulse {
+  0% {
+    outline: 1px solid red; }
+  100% {
+    outline: 10px solid rgba(255, 0, 0, 0.01); } }
+
+body {
+  cursor: none; }
+
+.noscroll {
+  overflow: hidden; }
+
+.addblur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px); }
+
+#titlebox {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 900;
+  font-size: 8.6vw;
+  text-align: center;
+  line-height: 80%;
+  color: white;
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+  #titlebox .title {
+    padding-top: 22.5vh;
+    -webkit-transform: rotateY(-20deg);
+            transform: rotateY(-20deg); }
+  #titlebox .subtitle {
+    font-size: 3.8vw;
+    -webkit-transform: rotateY(5deg);
+            transform: rotateY(5deg); }
+  #titlebox .author {
+    font-size: 7.8vw;
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg); }
+  #titlebox .spinner {
+    position: absolute;
+    width: 90vw;
+    left: 5vw;
+    height: 5vh;
+    background-color: red; }
+  #titlebox .s0 {
+    top: 2.5vh;
+    animation: spin 10s linear 1s reverse infinite; }
+  #titlebox .s1 {
+    top: 7.5vh;
+    animation: spin 10.25s linear 1s reverse infinite; }
+  #titlebox .s2 {
+    top: 12.5vh;
+    animation: spin 10.5s linear 1s reverse infinite; }
+  #titlebox .s3 {
+    top: 17.5vh;
+    animation: spin 10.75s linear 1s reverse infinite; }
+  #titlebox .s4 {
+    top: 22.5vh;
+    animation: spin 11s linear 1s reverse infinite; }
+  #titlebox .s5 {
+    top: 27.5vh;
+    animation: spin 11.25s linear 1s reverse infinite; }
+  #titlebox .s6 {
+    top: 32.5vh;
+    animation: spin 11.5s linear 1s reverse infinite; }
+  #titlebox .s7 {
+    top: 37.5vh;
+    animation: spin 11.75s linear 1s reverse infinite; }
+  #titlebox .s8 {
+    top: 42.5vh;
+    animation: spin 12s linear 1s reverse infinite; }
+  #titlebox .s11 {
+    top: 47.5vh;
+    animation: spin 12.25s linear 1s reverse infinite; }
+  #titlebox .s12 {
+    top: 52.5vh;
+    animation: spin 12.5s linear 1s reverse infinite; }
+  #titlebox .s13 {
+    top: 57.5vh;
+    animation: spin 12.75s linear 1s reverse infinite; }
+  #titlebox .s14 {
+    top: 62.5vh;
+    animation: spin 13s linear 1s reverse infinite; }
+  #titlebox .s15 {
+    top: 67.5vh;
+    animation: spin 13.25s linear 1s reverse infinite; }
+  #titlebox .s16 {
+    top: 72.5vh;
+    animation: spin 13.5s linear 1s reverse infinite; }
+  #titlebox .s17 {
+    top: 77.5vh;
+    animation: spin 13.75s linear 1s reverse infinite; }
+  #titlebox .s18 {
+    top: 82.5vh;
+    animation: spin 14s linear 1s reverse infinite; }
+  #titlebox svg {
+    position: absolute;
+    width: auto;
+    height: 10vh;
+    top: 87vh;
+    left: calc(50vw - 5vh);
+    animation: spin 14s linear 1s reverse infinite; }
+
+#main {
+  position: relative;
+  padding-top: 100vh; }
+  #main .circle {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    border-radius: 100%;
+    opacity: 0;
+    top: 25;
+    left: 25;
+    -webkit-transform: translate(-1.5rem, -1.5rem);
+            transform: translate(-1.5rem, -1.5rem); }
+  #main p {
+    position: relative;
+    width: 60vw;
+    left: 5vw;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+    color: red;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+    text-align: justify; }
+  #main .image {
+    position: -webkit-sticky;
+    position: sticky;
+    float: right;
+    width: 25vw;
+    right: 5vw;
+    top: 1rem; }
+  #main .poem {
+    position: -webkit-sticky;
+    position: sticky;
+    float: right;
+    width: 25vw;
+    height: 38rem;
+    right: 5vw;
+    top: 1rem;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 500;
+    color: red;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0.5vw 1vw; }
+    #main .poem span:first-of-type {
+      font-weight: 900; }
+  #main .underpoem {
+    position: absolute;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    padding: 5px; }
+  #main .overpoem {
+    position: absolute;
+    background-color: white;
+    -webkit-filter: none;
+            filter: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.75s;
+    transition: opacity 0.75s;
+    padding: 5px; }
+  #main .overpoem:hover {
+    opacity: 1;
+    -webkit-animation: pulse 0.5s;
+            animation: pulse 0.5s; }
+  #main img {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    position: absolute;
+    width: 25vw;
+    height: auto; }
+  #main .overimage {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  #main .overimage:hover {
+    opacity: 1; }
+  #main #poembox {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 500;
+    color: red;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    z-index: 3; }
+    #main #poembox div:first-of-type {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: 900;
+      left: 6vw;
+      top: 5vh; }
+    #main #poembox .bigpoem {
+      position: relative;
+      width: 90vw;
+      height: 80vh;
+      left: 6vw;
+      top: 10vh;
+      -webkit-column-count: 3;
+              column-count: 3;
+      -webkit-column-gap: 2vw;
+              column-gap: 2vw;
+      -webkit-column-fill: auto;
+              column-fill: auto; }
+
+header {
+  -webkit-filter: url(#redfilter);
+          filter: url(#redfilter); }
+
+footer {
+  -webkit-filter: url(#redfilter);
+          filter: url(#redfilter); }
+
+.mobile-bar-wrapper {
+  -webkit-filter: url(#redfilter);
+          filter: url(#redfilter); }
+
+.overlay-nav-container {
+  -webkit-filter: url(#redfilter);
+          filter: url(#redfilter); }
