@@ -29,7 +29,7 @@
 body {
   cursor: none; }
 
-svg:first-of-type {
+.filter {
   display: none;
 }
 
@@ -259,4 +259,3 @@ footer {
 .overlay-nav-container {
   -webkit-filter: url(#redfilter);
           filter: url(#redfilter); }
-
