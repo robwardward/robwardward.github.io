@@ -49,7 +49,7 @@ body {
   -webkit-perspective: 1000px;
           perspective: 1000px; }
   #titlebox .title {
-    padding-top: 22.5vh;
+    padding-top: 5vh;
     -webkit-transform: rotateY(-20deg);
             transform: rotateY(-20deg); }
   #titlebox .subtitle {
