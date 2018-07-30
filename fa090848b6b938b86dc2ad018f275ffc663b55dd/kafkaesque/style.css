@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Averia+Serif+Libre:300");
+body {
+  margin: 0; }
+
+#titlebox {
+  width: 100vw;
+  height: auto;
+  margin-bottom: -6%;
+  font-family: "Averia Gruesa Libre", monospace;
+  color: rgba(0, 0, 0, 0.9); }
+  #titlebox .titleimage img {
+    width: 100vw;
+    height: auto; }
+  #titlebox .title {
+    position: absolute;
+    left: 32vw;
+    top: 32.25vw;
+    font-size: 3.5vw;
+    letter-spacing: 0.25vw; }
+  #titlebox .author {
+    position: absolute;
+    left: 73vw;
+    top: 22vw;
+    font-size: 2vw;
+    letter-spacing: 0.1vw; }
+  #titlebox .illustrator {
+    position: absolute;
+    left: 73vw;
+    top: 41.2vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw; }
+
+.entry {
+  width: 60vw;
+  margin-left: 20vw; }
+  .entry .entrytitle {
+    position: absolute;
+    display: inline-block;
+    font-family: "Averia Gruesa Libre", monospace;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 2vw;
+    letter-spacing: 2px;
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+    -webkit-transform: rotate(-90deg) translateX(calc(-100% - 0.3em)) translateY(-118%);
+            transform: rotate(-90deg) translateX(calc(-100% - 0.3em)) translateY(-118%);
+    border-bottom-color: rgba(0, 0, 0, 0.9);
+    border-bottom-style: solid;
+    border-bottom-width: 0.1em; }
+  .entry .entrybody {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    letter-spacing: 0.075vw;
+    text-align: justify; }
+    .entry .entrybody .quote {
+      font-size: 1.2vw;
+      width: 90%;
+      margin-left: 5%;
+      padding: 0.3em; }
+    .entry .entrybody .ref {
+      background-color: rgba(0, 0, 0, 0.1); }
+    .entry .entrybody .ref:hover {
+      border-bottom-width: 0.2em;
+      border-bottom-style: solid;
+      border-bottom-color: rgba(0, 0, 0, 0.1);
+      cursor: pointer; }
+
+.illus {
+  position: relative;
+  z-index: -1; }
+
+.one img {
+  width: 100vw;
+  margin-top: -15vw;
+  margin-bottom: -8vw; }
+
+.two img {
+  width: 78vw;
+  margin-left: 6vw;
+  margin-top: -18vw;
+  margin-bottom: -12vw; }
+
+.three img {
+  width: 75vw;
+  margin-top: -29vw;
+  margin-bottom: -17vw; }
+
+.four img {
+  width: 66vw;
+  margin-top: 10vw;
+  margin-bottom: 10vw; }
+
+.six img {
+  width: 100vw;
+  margin-top: -2vw;
+  margin-bottom: -25vw; }
+
+.sixb img {
+  width: 18vw;
+  float: right;
+  margin-top: -6vw; }
+
+.sevena img {
+  width: 9vw;
+  float: left;
+  margin-top: -1vw;
+  margin-left: 13vw; }
+
+.sevenb img {
+  width: 48vw;
+  float: right;
+  padding-left: 2vw;
+  margin-top: 17vw; }
+
+.eight img {
+  width: 78vw;
+  margin-top: -13vw;
+  margin-bottom: -20vw; }
+
+.nine img {
+  width: 100vw;
+  margin-top: -8vw;
+  margin-bottom: -7vw; }
+
+.ten img {
+  width: 100vw;
+  margin-top: -22vw;
+  margin-bottom: -4vw; }
+
+.tena img {
+  width: 30vw;
+  float: right;
+  padding-left: 2vw; }
+
+.eleven img {
+  width: 30vw;
+  float: left; }
+
+.thirteen img {
+  width: 50vw;
+  margin-left: 40vw;
+  margin-top: -16.5vw;
+  margin-bottom: -11.5vw; }
+
+.fourteen img {
+  width: 100vw;
+  margin-top: -22vw;
+  margin-bottom: -4vw; }
+
+.fifteen img {
+  width: 100vw;
+  margin-top: -24vw;
+  margin-bottom: -21vw; }
+
+.sixteen img {
+  width: 50vw;
+  margin-left: 50vw;
+  margin-top: -30vw;
+  margin-bottom: -20vw; }
+
+.seventeen img {
+  width: 100vw;
+  margin-top: -22vw;
+  margin-bottom: -36vw; }
+
+.eighteen img {
+  width: 100vw;
+  margin-top: -18vw;
+  margin-bottom: -3vw; }
+
+.nineteen img {
+  width: 35vw;
+  margin: -12vw 0vw -16vw 59vw;
+  opacity: 0.9; }
+
+.twenty img {
+  width: 100vw;
+  margin-top: -3vw; }
