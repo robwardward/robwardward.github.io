@@ -224,6 +224,8 @@ body {
   margin-bottom: 10vw; }
 
 @media (max-width: 1000px) {
+  body {
+    font-size: 18px !important; }
   #titlebox {
     overflow-y: hidden;
     margin-bottom: 10vw; }
