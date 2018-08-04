@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Averia+Serif+Libre:300");
+@import url("https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Averia+Serif+Libre:300,300i");
 body {
   margin: 0; }
 
 #titlebox {
   width: 100vw;
   height: auto;
-  margin-bottom: -6%;
+  margin-bottom: -7vw;
   font-family: "Averia Gruesa Libre", monospace;
   color: rgba(0, 0, 0, 0.9); }
   #titlebox .titleimage img {
@@ -14,7 +14,7 @@ body {
   #titlebox .title {
     position: absolute;
     left: 32vw;
-    top: 32.25vw;
+    top: 32.5vw;
     font-size: 3.5vw;
     letter-spacing: 0.25vw; }
   #titlebox .author {
@@ -25,7 +25,7 @@ body {
     letter-spacing: 0.1vw; }
   #titlebox .illustrator {
     position: absolute;
-    left: 73vw;
+    left: 73.2vw;
     top: 41.2vw;
     font-size: 1.5vw;
     letter-spacing: 0.1vw; }
@@ -34,19 +34,16 @@ body {
   width: 60vw;
   margin-left: 20vw; }
   .entry .entrytitle {
-    position: absolute;
-    display: inline-block;
+    display: block;
     font-family: "Averia Gruesa Libre", monospace;
     color: rgba(0, 0, 0, 0.9);
-    font-size: 2vw;
-    letter-spacing: 2px;
-    -webkit-transform-origin: left top;
-            transform-origin: left top;
-    -webkit-transform: rotate(-90deg) translateX(calc(-100% - 0.3em)) translateY(-118%);
-            transform: rotate(-90deg) translateX(calc(-100% - 0.3em)) translateY(-118%);
+    font-size: 2.2vw;
+    letter-spacing: 0.1vw;
+    -webkit-transform: translateX(0vw) translateY(1.5vw);
+            transform: translateX(0vw) translateY(1.5vw);
     border-bottom-color: rgba(0, 0, 0, 0.9);
     border-bottom-style: solid;
-    border-bottom-width: 0.1em; }
+    border-bottom-width: 0.2vw; }
   .entry .entrybody {
     font-family: "Averia Serif Libre", serif;
     font-weight: 100;
@@ -56,17 +53,46 @@ body {
     letter-spacing: 0.075vw;
     text-align: justify; }
     .entry .entrybody .quote {
-      font-size: 1.2vw;
-      width: 90%;
-      margin-left: 5%;
-      padding: 0.3em; }
+      font-size: 1.25vw;
+      line-height: 2vw;
+      width: 55vw;
+      margin: 2.5vw; }
     .entry .entrybody .ref {
-      background-color: rgba(0, 0, 0, 0.1); }
+      background: rgba(0, 0, 0, 0.075);
+      -webkit-transition: background 0.25s;
+      transition: background 0.25s; }
     .entry .entrybody .ref:hover {
-      border-bottom-width: 0.2em;
-      border-bottom-style: solid;
-      border-bottom-color: rgba(0, 0, 0, 0.1);
-      cursor: pointer; }
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.15); }
+
+.redog {
+  width: 48vw; }
+
+.doom {
+  width: 48vw;
+  margin-left: 32vw; }
+
+.refbox {
+  position: fixed;
+  width: 60vw;
+  left: 20vw;
+  bottom: 0vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-style: solid;
+  border-top-width: 0.2vw;
+  padding: 1vw 0;
+  font-family: "Averia Serif Libre", serif;
+  text-align: center;
+  font-size: 1.25vw;
+  line-height: 2vw;
+  z-index: 5; }
+
+.showref {
+  display: block; }
+
+.hideref {
+  display: none; }
 
 .illus {
   position: relative;
@@ -74,24 +100,37 @@ body {
 
 .one img {
   width: 100vw;
-  margin-top: -15vw;
-  margin-bottom: -8vw; }
+  margin-top: -40vw;
+  margin-bottom: -17vw; }
+
+.oneb img {
+  width: 50vw;
+  margin-left: 42vw;
+  margin-top: -9vw;
+  margin-bottom: -60vw; }
 
 .two img {
   width: 78vw;
   margin-left: 6vw;
-  margin-top: -18vw;
-  margin-bottom: -12vw; }
+  margin-top: -19vw;
+  margin-bottom: -15vw; }
 
 .three img {
-  width: 75vw;
-  margin-top: -29vw;
-  margin-bottom: -17vw; }
+  width: 60vw;
+  margin-left: 17vw;
+  margin-top: -23vw;
+  margin-bottom: -15vw; }
 
 .four img {
-  width: 66vw;
-  margin-top: 10vw;
-  margin-bottom: 10vw; }
+  width: 50vw;
+  margin-top: -9vw;
+  margin-bottom: 0vw; }
+
+.five img {
+  width: 50vw;
+  margin-left: 50vw;
+  margin-top: -14vw;
+  margin-bottom: -15vw; }
 
 .six img {
   width: 100vw;
@@ -104,21 +143,21 @@ body {
   margin-top: -6vw; }
 
 .sevena img {
-  width: 9vw;
+  width: 8vw;
   float: left;
   margin-top: -1vw;
-  margin-left: 13vw; }
+  margin-left: 15vw; }
 
 .sevenb img {
   width: 48vw;
   float: right;
   padding-left: 2vw;
-  margin-top: 17vw; }
+  margin-top: 10vw; }
 
 .eight img {
   width: 78vw;
   margin-top: -13vw;
-  margin-bottom: -20vw; }
+  margin-bottom: -21.5vw; }
 
 .nine img {
   width: 100vw;
@@ -132,18 +171,20 @@ body {
 
 .tena img {
   width: 30vw;
+  margin-top: 4vw;
   float: right;
   padding-left: 2vw; }
 
 .eleven img {
   width: 30vw;
+  margin-top: 4vw;
   float: left; }
 
 .thirteen img {
-  width: 50vw;
-  margin-left: 40vw;
-  margin-top: -16.5vw;
-  margin-bottom: -11.5vw; }
+  width: 30vw;
+  margin-left: 35vw;
+  margin-top: -9vw;
+  margin-bottom: -7vw; }
 
 .fourteen img {
   width: 100vw;
@@ -151,9 +192,10 @@ body {
   margin-bottom: -4vw; }
 
 .fifteen img {
-  width: 100vw;
-  margin-top: -24vw;
-  margin-bottom: -21vw; }
+  width: 30vw;
+  margin-left: 33vw;
+  margin-top: -10vw;
+  margin-bottom: -8vw; }
 
 .sixteen img {
   width: 50vw;
@@ -178,4 +220,154 @@ body {
 
 .twenty img {
   width: 100vw;
-  margin-top: -3vw; }
+  margin-top: -3vw;
+  margin-bottom: 10vw; }
+
+@media (max-width: 1000px) {
+  #titlebox {
+    overflow-y: hidden;
+    margin-bottom: 10vw; }
+    #titlebox .titleimage img {
+      width: 200vw; }
+    #titlebox .title {
+      left: 47vw;
+      top: 64vw;
+      font-size: 9vw;
+      letter-spacing: 0.5vw; }
+    #titlebox .author {
+      left: 47vw;
+      top: 93vw;
+      font-size: 5vw;
+      letter-spacing: 0.3vw; }
+    #titlebox .illustrator {
+      left: 47vw;
+      top: 100vw;
+      font-size: 4vw;
+      letter-spacing: 0.2vw; }
+  .entry {
+    width: 80vw;
+    margin-left: 10vw; }
+    .entry .entrytitle {
+      font-size: 5vw;
+      letter-spacing: 0.3vw;
+      -webkit-transform: translateX(0vw) translateY(1.2vw);
+              transform: translateX(0vw) translateY(1.2vw);
+      border-bottom-width: 0.4vw; }
+    .entry .entrybody {
+      font-size: 2.5vw;
+      line-height: 6vw;
+      letter-spacing: 0.1vw; }
+      .entry .entrybody .quote {
+        font-size: 1.5vw;
+        line-height: 4vw;
+        width: 75vw;
+        margin: 2.5vw; }
+  .refbox {
+    width: 100vw;
+    left: 0vw;
+    border-top-width: 0.4vw;
+    padding: 3vw 0;
+    font-size: 3vw; }
+  .one img {
+    width: 100vw;
+    margin-top: -45vw;
+    margin-bottom: -15vw; }
+  .oneb img {
+    width: 50vw;
+    margin-left: 42vw;
+    margin-top: -14vw;
+    margin-bottom: -50vw; }
+  .two img {
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: -25vw;
+    margin-bottom: -24vw; }
+  .three img {
+    width: 95vw;
+    margin-left: 0vw;
+    margin-top: -35vw;
+    margin-bottom: -20vw; }
+  .four img {
+    width: 75vw;
+    margin-top: -6vw;
+    margin-bottom: 0vw; }
+  .five img {
+    width: 70vw;
+    margin-left: 30vw;
+    margin-top: -25vw;
+    margin-bottom: -20vw; }
+  .six img {
+    width: 100vw;
+    margin-top: -4vw;
+    margin-bottom: -15vw; }
+  .sixb img {
+    width: 18vw;
+    float: right;
+    margin-top: -6.5vw; }
+  .sevena img {
+    width: 29vw;
+    float: left;
+    margin-top: -2vw;
+    margin-left: 0vw; }
+  .sevenb img {
+    display: none; }
+  .eight img {
+    width: 75vw;
+    margin-left: 17vw;
+    margin-top: -14vw;
+    margin-bottom: -9vw; }
+  .nine img {
+    width: 100vw;
+    margin-top: -12vw;
+    margin-bottom: -8vw; }
+  .ten img {
+    width: 100vw;
+    margin-top: -22vw;
+    margin-bottom: -4vw; }
+  .tena img {
+    width: 40vw;
+    margin-left: 60vw;
+    margin-top: 4vw;
+    float: none;
+    padding-left: 0vw; }
+  .eleven img {
+    width: 83vw;
+    margin-left: 10vw;
+    margin-top: -30vw;
+    margin-bottom: -25vw;
+    float: none; }
+  .thirteen img {
+    width: 60vw;
+    margin-left: 18vw;
+    margin-top: -22vw;
+    margin-bottom: -10vw; }
+  .fourteen img {
+    width: 100vw;
+    margin-top: -22vw;
+    margin-bottom: -4vw; }
+  .fifteen img {
+    width: 80vw;
+    margin-left: 6vw;
+    margin-top: -20vw;
+    margin-bottom: -15vw; }
+  .sixteen img {
+    width: 70vw;
+    margin-left: 30vw;
+    margin-top: -35vw;
+    margin-bottom: -30vw; }
+  .seventeen img {
+    width: 100vw;
+    margin-top: -22vw;
+    margin-bottom: -36vw; }
+  .eighteen img {
+    width: 100vw;
+    margin-top: -25vw;
+    margin-bottom: -3vw; }
+  .nineteen img {
+    width: 60vw;
+    margin: -18vw 0vw -26vw 40vw;
+    opacity: 0.9; }
+  .twenty img {
+    width: 100vw;
+    margin-top: 0vw;
+    margin-bottom: 10vw; } }
