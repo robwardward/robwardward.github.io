@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Cinzel&family=Cormorant+Garamond:wght@500&family=Crimson+Text:wght@700&family=Exo+2:wght@800&family=Libre+Baskerville&family=Lora:wght@700&family=Montserrat:wght@900&family=Source+Sans+Pro:wght@700&family=Tenor+Sans&family=Work+Sans:wght@900&display=swap");
+@font-face {
+  font-family: 'StiluB';
+  src: url("https://static1.squarespace.com/static/5848a289414fb5fbd40fe2a3/t/59f5fc3524a694055a65cfb1/1509293109454/Stilu-Bold.woff") format("woff"); }
+
+#containergrid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 3fr 7fr;
+  grid-template-rows: 10vw auto;
+  grid-template-areas: "logo menu" "impressum menu";
+  background-image: url("/s/dottedline.png");
+  background-size: 75vw;
+  background-repeat: repeat-y;
+  opacity: 0.87; }
+  #containergrid .logo {
+    grid-area: logo;
+    position: fixed; }
+    #containergrid .logo img {
+      width: 75vw; }
+  #containergrid .impressum {
+    grid-area: impressum;
+    display: grid;
+    padding: 2vw;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 2vw; }
+    #containergrid .impressum p {
+      margin: auto; }
+  #containergrid .menuscroller {
+    grid-area: menu;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+    #containergrid .menuscroller a {
+      color: white;
+      -webkit-text-decoration-line: none;
+              text-decoration-line: none; }
+    #containergrid .menuscroller .menuitem {
+      width: 65vw;
+      height: 8vw;
+      margin: 2.5vw;
+      padding: 1vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.75);
+      background-blend-mode: multiply;
+      background-size: 70vw;
+      border-radius: 0.5vw;
+      transition: background-color 0.25s ease-in-out; }
+      #containergrid .menuscroller .menuitem .title {
+        font-size: 4vw; }
+      #containergrid .menuscroller .menuitem .author {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.5vw;
+        text-align: right;
+        padding-bottom: 0.5vw; }
+    #containergrid .menuscroller .menuitem:hover {
+      background-color: rgba(0, 0, 0, 0.5); }
+    #containergrid .menuscroller .spacer {
+      opacity: 0; }
+    #containergrid .menuscroller .christmasafterbrexit {
+      background-image: url("/s/CABbg.jpg");
+      background-position: 0% 90%; }
+      #containergrid .menuscroller .christmasafterbrexit .title {
+        font-family: 'Cormorant Garamond', serif; }
+    #containergrid .menuscroller .againstsilence {
+      background-image: url("/s/ASbg.png");
+      background-position: 0% 50%; }
+      #containergrid .menuscroller .againstsilence .title {
+        font-family: 'Source Sans Pro', sans-serif; }
+    #containergrid .menuscroller .leftalone {
+      background-image: url("/s/LAbg.jpg");
+      background-position: 0% 35%; }
+      #containergrid .menuscroller .leftalone .title {
+        font-family: 'Lora', serif; }
+    #containergrid .menuscroller .thenightingalesnest {
+      background-image: url("/s/TNNbg.png");
+      background-position: 0% 5%; }
+      #containergrid .menuscroller .thenightingalesnest .title {
+        font-family: 'Lora', serif; }
+    #containergrid .menuscroller .thelaughofeliza {
+      background-image: url("/s/LOEbg.png");
+      background-position: 0% 10%; }
+      #containergrid .menuscroller .thelaughofeliza .title {
+        font-family: 'Exo 2', sans-serif; }
+    #containergrid .menuscroller .livingoutsidetheframe {
+      background-image: url("/s/LOTFbg.jpg");
+      background-position: 0% 40%; }
+      #containergrid .menuscroller .livingoutsidetheframe .title {
+        font-family: 'Montserrat', sans-serif; }
+    #containergrid .menuscroller .ahopeonthewall {
+      background-image: url("/s/AHOTWbg.png");
+      background-position: 0% 40%; }
+      #containergrid .menuscroller .ahopeonthewall .title {
+        font-family: 'StiluB', sans-serif; }
+    #containergrid .menuscroller .postcardsfromberlin {
+      background-image: url("/s/PFBbg.jpg");
+      background-position: 0% 40%; }
+      #containergrid .menuscroller .postcardsfromberlin .title {
+        font-family: 'Crimson Text', serif; }
+    #containergrid .menuscroller .thejudepoems {
+      background-image: url("/s/TJPbg.jpg");
+      background-position: 0% 75%; }
+      #containergrid .menuscroller .thejudepoems .title {
+        font-family: 'Cinzel', serif; }
+    #containergrid .menuscroller .anenglishtowelshdictionaryoffeministterms {
+      background-image: url("/s/AETWDOFTbg.png");
+      background-position: 0% 25%; }
+      #containergrid .menuscroller .anenglishtowelshdictionaryoffeministterms .title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 3vw; }
+    #containergrid .menuscroller .thumbsinspace {
+      background-image: url("/s/TISbg.png");
+      background-position: 0% 60%; }
+      #containergrid .menuscroller .thumbsinspace .title {
+        font-family: 'Work Sans', sans-serif; }
+    #containergrid .menuscroller .kafkaesque {
+      background-image: url("/s/Kbg.png");
+      background-position: 0% 55%; }
+      #containergrid .menuscroller .kafkaesque .title {
+        font-family: 'Averia Gruesa Libre', cursive; }
+    #containergrid .menuscroller .reflector {
+      background-image: url("/s/Rbg.png");
+      background-position: 0% 10%; }
+      #containergrid .menuscroller .reflector .title {
+        font-family: 'Tenor Sans', sans-serif; }
+    #containergrid .menuscroller .deadoneiricmonsters {
+      background-image: url("/s/DOMbg.png");
+      background-position: 10% 25%; }
+      #containergrid .menuscroller .deadoneiricmonsters .title {
+        font-family: 'Times New Roman', sans-serif; }
+    #containergrid .menuscroller .byluckoftheharbour {
+      background-image: url("/s/BLOTHbg.jpg");
+      background-position: 0% 35%; }
+      #containergrid .menuscroller .byluckoftheharbour .title {
+        font-family: 'Cinzel Decorative', cursive; }
+
+@media (max-width: 1000px) {
+  #containergrid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 20vh auto;
+    grid-template-areas: "logo impressum" "logo menu";
+    background-image: url("/s/dottedline90.png");
+    background-size: auto 50vh;
+    background-repeat: repeat-x;
+    opacity: 0.87; }
+    #containergrid .logo {
+      grid-area: logo;
+      position: fixed; }
+      #containergrid .logo img {
+        width: 50vh;
+        transform: rotate(90deg) translateY(-100%);
+        transform-origin: top left; }
+    #containergrid .menuscroller {
+      grid-area: menu;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      overflow-x: auto; }
+      #containergrid .menuscroller .menuitem {
+        width: 85vw;
+        height: 20vw;
+        margin: 2.5vw;
+        background-color: black;
+        border-radius: 0.5vw; } }

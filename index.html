@@ -1,134 +1,88 @@
+<html lang="en">
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>rw staging area</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="utf-8">
+    <title>Seam Editions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="normalize.css" rel="stylesheet" media="all">
+    <link href="style.css" rel="stylesheet" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
-<style>
-
-body {
-	
-	background-image: url('grunge_patterns.jpg');
-	background-attachment: fixed;
-	color: #333;
-}
-
-.box {
-	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
-}
-
-.lightbox {
-	zoom: 1.5;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(10, 10, 10, 0.8);
-	text-align: center;
-	margin: auto;
-	
-}
-
-div.horizontal {
-	display: flex;
-	justify-content: center;
-	height: 100%;
-}
-
-div.vertical {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-}
-
-::-webkit-input-placeholder {
-   color: #955;
-   text-align: center;
-}
-
-::-moz-placeholder {  
-   color: #955;
-   text-align: center;
-}
-
-:-ms-input-placeholder {  
-   color: #955;
-   text-align: center;
-}
-
-</style>
-
 <body>
-	
-	<div id="loginbox" class="lightbox" >
-		<div class="horizontal">
-			<div class="vertical">
-				<div class="box">				
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	 
-
-	 <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
-
-	<script type="text/javascript">
-	"use strict";
-
-
-	function loadPage(pwd) {
-		
-		var hash= pwd;
-		hash= Sha1.hash(pwd);
-		var url= hash + "/index.html";
-			
-		$.ajax({
-			url : url,
-			dataType : "html",
-			success : function(data) {
-
-				window.location= url;
-
-			},
-			error : function(xhr, ajaxOptions, thrownError) {
-			
-
-				parent.location.hash= hash;
-
-				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","wrong password");
-				$("#password").val("");
-			}
-		});
-	}
-
-	 
-	$("#loginbutton").on("click", function() {
-		loadPage($("#password").val());
-	});
-	$("#password").keypress(function(e) {
-		if (e.which == 13) {
-			
-			loadPage($("#password").val());
-		}
-	});
-	$("#password").focus();
-		
-	</script>
-
+    <!--<div class="preloader"><img src="/s/icon.png" /></div>-->
+    <div id="containergrid">
+        <div class="logo"><img src="/s/Logo_transparent.png" /></div>
+        <div class="impressum">
+            <p>Seam Editions was a creative-critical publishing project based variously in Norwich, London, and Reading.</p>
+            <p>The project was run by Alex Read, Sara Helen Binney, Sarah Jones, Sarah Taylor, Simon Pook, and Robert Ward.</p>
+            <p>Everything Seam published online, and detais of two print projects, is available here for posterity.</p>
+            <p>Thank you for reading.</p>
+        </div>
+        <div class="menuscroller">
+            <div class="menuitem spacer"></div>
+            <a href="/s/christmasafterbrexit"><div class="menuitem christmasafterbrexit">
+                <div class="title">Christmas After Brexit</div>
+                <div class="author">Michael Askew</div>
+            </div></a>
+            <a href="/s/againstsilence"><div class="menuitem againstsilence">
+                <div class="title">AGAINST SILENCE</div>
+                <div class="author">Fern Broome Richards</div>
+            </div></a>
+            <a href="/s/leftalone"><div class="menuitem leftalone">
+                <div class="title">Left Alone</div>
+                <div class="author">Jake Reynolds</div>
+            </div></a>
+            <a href="/s/thenightingalesnest"><div class="menuitem thenightingalesnest">
+                <div class="title">The Nightingales Nest</div>
+                <div class="author">Richard Lambert</div>
+            </div></a>
+            <a href="/s/thelaughofeliza"><div class="menuitem thelaughofeliza">
+                <div class="title">The Laugh of Eliza</div>
+                <div class="author">Leah Foster</div>
+            </div></a>
+            <a href="/s/livingoutsidetheframe"><div class="menuitem livingoutsidetheframe">
+                <div class="title">Living Outside the Frame</div>
+                <div class="author">Lewis Buxton</div>
+            </div></a>
+            <a href="/s/ahopeonthewall"><div class="menuitem ahopeonthewall">
+                <div class="title">A Hope on the Wall</div>
+                <div class="author">Anna Metcalfe</div>
+            </div></a>
+            <a href="/s/postcardsfromberlin"><div class="menuitem postcardsfromberlin">
+                <div class="title">Postcards From Berlin</div>
+                <div class="author">Bec Miles</div>
+            </div></a>
+            <a href="/s/thejudepoems"><div class="menuitem thejudepoems">
+                <div class="title">THE JUDE POEMS</div>
+                <div class="author">Matthew Halliday</div>
+            </div></a>
+            <a href="/s/anenglishtowelshdictionaryoffeministterms"><div class="menuitem anenglishtowelshdictionaryoffeministterms">
+                <div class="title">An English to Welsh Dictionary of Feminist Terms</div>
+                <div class="author">Sarah Hudis</div>
+            </div></a>
+            <a href="/s/thumbsinspace"><div class="menuitem thumbsinspace">
+                <div class="title">Thumbs in Space</div>
+                <div class="author">Seabright D. Mortimer</div>
+            </div></a>
+            <a href="/s/kafkaesque"><div class="menuitem kafkaesque">
+                <div class="title">Kafkaesque</div>
+                <div class="author">Harry Denniston</div>
+            </div></a>
+            <a href="/s/reflector"><div class="menuitem reflector">
+                <div class="title">REFLECTOR</div>
+                <div class="author">Nina Ines Ward</div>
+            </div></a>
+            <a href="/s/deadoneiricmonsters"><div class="menuitem deadoneiricmonsters">
+                <div class="title">DEAD ONEIRIC MONSTERS</div>
+                <div class="author">Scott Mason</div>
+            </div></a>
+            <a href="/s/byluckoftheharbour"><div class="menuitem byluckoftheharbour">
+                <div class="title">]]by lUck oF the haRbour</div>
+                <div class="author">Ali Graham</div>
+            </div></a>
+        </div>
+    </div>
 </body>
-</html>
