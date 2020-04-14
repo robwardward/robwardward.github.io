@@ -1,0 +1,118 @@
+#ratiomodal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 45vh;
+  background-color: white;
+  text-align: center;
+  z-index: 99; }
+
+.site-container {
+  height: auto; }
+
+#main {
+  position: relative;
+  width: 100%;
+  padding-top: 70vh;
+  background-attachment: fixed;
+  background-repeat: repeat; }
+
+#mobsheet {
+  display: none; }
+
+#title {
+  position: fixed;
+  width: 27.5vw;
+  left: 36.25vw;
+  top: 30vh;
+  transform: translateX(-3.8vw);
+  border: 0.15vw solid black;
+  background-color: #f3f3f1; }
+
+#essay {
+  position: relative;
+  width: 30vw;
+  padding: 1vw 1vw 1vw 19vw; }
+
+#poemwrapper {
+  width: 30vw;
+  height: 100vh;
+  padding: 1vw 1vw 1vw 50vw; }
+
+#poem {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none; }
+  #poem::-webkit-scrollbar {
+    width: 0 !important; }
+
+.poemwrappermove {
+  position: absolute; }
+
+.poemwrapperfix {
+  position: fixed;
+  top: -1vw; }
+
+.title {
+  width: 100%;
+  text-align: center; }
+
+.author {
+  color: red; }
+
+.bodytext {
+  font-family: "Times New Roman", serif;
+  letter-spacing: 0.05vw;
+  line-height: 1.8vw;
+  font-size: 1.2vw;
+  color: black; }
+
+.essaytext {
+  text-align: right; }
+  .essaytext div {
+    padding-top: 1.8vw; }
+  .essaytext .quote {
+    font-style: italic; }
+  .essaytext .citenum {
+    display: inline-block;
+    transform: translateY(-0.6vw);
+    font-size: 0.8vw; }
+  .essaytext .quotesource {
+    font-style: normal; }
+
+.poemtext {
+  color: red; }
+
+@media (max-width: 1000px) {
+  #essay {
+    width: 48vw;
+    padding: 1vw 1vw 1vw 1vw; }
+  #title {
+    position: fixed;
+    width: 34vw;
+    left: 33vw;
+    top: 30vh;
+    transform: translateX(-3.8vw);
+    border: 0.15vw solid black;
+    background-color: #f3f3f1; }
+  #poemwrapper {
+    width: 48vw;
+    height: 100vh;
+    padding: 1vw 1vw 1vw 50vw;
+    background: white; }
+  .bodytext {
+    line-height: 2vw;
+    font-size: 1.5vw; }
+  .essaytext div {
+    padding-top: 2vw; }
+  .essaytext .citenum {
+    display: inline-block;
+    transform: translateY(-0.6vw);
+    font-size: 1vw; } }
