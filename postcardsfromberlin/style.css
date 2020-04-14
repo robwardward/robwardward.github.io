@@ -6,7 +6,7 @@ body {
   background-color: #fff; }
 
 .titlebox {
-  margin: 10vh 10vw 5vh 10vw;
+  padding: 10vh 10vw 5vh 10vw;
   color: #383c3f;
   z-index: 1; }
   .titlebox .map {
@@ -192,7 +192,7 @@ body {
 
 @media (max-width: 1000px) {
   .titlebox {
-    margin: 5vh 5vw 15vh 5vw; }
+    padding: 5vh 5vw 15vh 5vw; }
     .titlebox .map {
       width: 44vw;
       margin: auto;
