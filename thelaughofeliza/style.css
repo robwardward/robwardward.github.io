@@ -2,11 +2,6 @@
 .overflow-wrapper {
   background-color: transparent; }
 
-header,
-footer,
-.mobile-bar-wrapper {
-  background-color: white; }
-
 #bg {
   position: fixed;
   display: flex;
