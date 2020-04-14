@@ -1,0 +1,11 @@
+#seamhome {
+  position: fixed;
+  width: 15vw;
+  height: 15vw;
+  transform: rotate(45deg) translateX(-12vw);
+  background-color: lightgray;
+  z-index: 99; }
+  #seamhome img {
+    position: absolute;
+    width: 4vw;
+    transform: rotate(-45deg) translateX(3.5vw) translateY(11.2vw); }
