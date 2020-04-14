@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:500,900");
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  100% {
+    -webkit-transform: rotateY(359deg);
+            transform: rotateY(359deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  100% {
+    -webkit-transform: rotateY(359deg);
+            transform: rotateY(359deg); } }
+
+body {
+  cursor: none; }
+
+.noscroll {
+  overflow: hidden; }
+
+.titleblur {
+  -webkit-filter: blur(5px);
+          filter: blur(5px); }
+
+.filter {
+  display: none; }
+
+#titlebox {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+  #titlebox .spinner {
+    position: absolute;
+    width: 88vw;
+    left: 5vw;
+    height: 4.6vh;
+    background-color: #ff0000; }
+  #titlebox .s0 {
+    top: 2.5vh;
+    animation: spin 20s linear 1s reverse infinite; }
+  #titlebox .s1 {
+    top: 7vh;
+    animation: spin 20.5s linear 1s reverse infinite; }
+  #titlebox .s2 {
+    top: 11.5vh;
+    animation: spin 21s linear 1s reverse infinite; }
+  #titlebox .s3 {
+    top: 16vh;
+    animation: spin 21.5s linear 1s reverse infinite; }
+  #titlebox .s4 {
+    top: 20.5vh;
+    animation: spin 22s linear 1s reverse infinite; }
+  #titlebox .s5 {
+    top: 25vh;
+    animation: spin 22.5s linear 1s reverse infinite; }
+  #titlebox .s6 {
+    top: 29.5vh;
+    animation: spin 23s linear 1s reverse infinite; }
+  #titlebox .s7 {
+    top: 34vh;
+    animation: spin 23.5s linear 1s reverse infinite; }
+  #titlebox .s8 {
+    top: 38.5vh;
+    animation: spin 24s linear 1s reverse infinite; }
+  #titlebox .s11 {
+    top: 43vh;
+    animation: spin 24.5s linear 1s reverse infinite; }
+  #titlebox .s12 {
+    top: 47.5vh;
+    animation: spin 25s linear 1s reverse infinite; }
+  #titlebox .s13 {
+    top: 52vh;
+    animation: spin 25.5s linear 1s reverse infinite; }
+  #titlebox .s14 {
+    top: 56.5vh;
+    animation: spin 26s linear 1s reverse infinite; }
+  #titlebox .s15 {
+    top: 61vh;
+    animation: spin 26.5s linear 1s reverse infinite; }
+  #titlebox .s16 {
+    top: 65.5vh;
+    animation: spin 27s linear 1s reverse infinite; }
+  #titlebox .s17 {
+    top: 70vh;
+    animation: spin 27.5s linear 1s reverse infinite; }
+  #titlebox .s18 {
+    top: 74.5vh;
+    animation: spin 28s linear 1s reverse infinite; }
+  #titlebox svg {
+    position: absolute;
+    width: auto;
+    height: 9vh;
+    top: 79vh;
+    left: calc(50vw - 6.5vh);
+    animation: spin 28s linear 1s reverse infinite; }
+
+#titletext {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  line-height: 80%;
+  color: white;
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+  #titletext .title {
+    font-size: 7vw;
+    line-height: 8vw;
+    margin-top: calc(50vh - 15vw);
+    -webkit-transform: rotateY(-25deg);
+            transform: rotateY(-25deg); }
+  #titletext .subtitle {
+    font-size: 3vw;
+    line-height: 7.5vw;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  #titletext .author {
+    font-size: 5vw;
+    line-height: 8vw;
+    -webkit-transform: rotateY(45deg) translateY(-1.5rem);
+            transform: rotateY(45deg) translateY(-1.5rem); }
+
+#main {
+  position: relative;
+  width: 95vw;
+  left: 0;
+  padding-top: 90vh; }
+  #main #cursor {
+    position: fixed;
+    width: 3rem;
+    opacity: 0;
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px);
+    z-index: 5; }
+    #main #cursor .cursor {
+      position: absolute;
+      height: 3rem;
+      width: auto;
+      visibility: visible; }
+    #main #cursor .pointer {
+      position: absolute;
+      height: 3rem;
+      width: auto;
+      -webkit-transform: translateX(-0.75rem);
+              transform: translateX(-0.75rem);
+      visibility: hidden; }
+  #main .container {
+    position: relative;
+    overflow: visible; }
+  #main p {
+    position: relative;
+    width: 60vw;
+    left: 5vw;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    color: red;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 2px;
+    text-align: justify;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
+  #main .image {
+    position: -webkit-sticky;
+    position: sticky;
+    float: right;
+    width: 25vw;
+    right: 5vw;
+    top: 1rem; }
+  #main .i1 {
+    height: 20vw; }
+  #main .i2 {
+    height: 26vw; }
+  #main .i3 {
+    height: 17vw; }
+  #main .i4 {
+    height: 34vw; }
+  #main .i5 {
+    height: 25vw; }
+  #main .i6 {
+    height: 34vw; }
+  #main .i7 {
+    height: 19vw; }
+  #main .i8 {
+    height: 23vw; }
+  #main .i9 {
+    height: 21vw; }
+  #main .poem {
+    position: -webkit-sticky;
+    position: sticky;
+    float: right;
+    width: 25vw;
+    height: 38rem;
+    right: 5vw;
+    top: 1rem;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: red;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0.5vw 1vw; }
+    #main .poem span:first-of-type {
+      font-weight: 900; }
+  #main .underpoem {
+    position: absolute;
+    width: 25vw;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+    padding: 5px;
+    -webkit-transition: -webkit-filter 0.5s;
+    transition: -webkit-filter 0.5s;
+    transition: filter 0.5s;
+    transition: filter 0.5s, -webkit-filter 0.5s; }
+  #main .underpoem:hover {
+    -webkit-filter: blur(0px);
+            filter: blur(0px); }
+  #main img {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    -webkit-transition: none;
+    transition: none; }
+  #main .overimage {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  #main .overimage:hover {
+    opacity: 1; }
+  #main #poembox {
+    display: none;
+    position: fixed;
+    width: 95vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: red;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    z-index: 3; }
+    #main #poembox div:first-of-type {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: 900;
+      left: 6vw;
+      top: 5vh; }
+    #main #poembox .bigpoem {
+      position: relative;
+      width: 90vw;
+      height: 80vh;
+      left: 6vw;
+      top: 10vh;
+      -webkit-column-count: 3;
+              column-count: 3;
+      -webkit-column-gap: 2vw;
+              column-gap: 2vw;
+      -webkit-column-fill: auto;
+              column-fill: auto; }
+    #main #poembox .closebutton {
+      position: fixed;
+      width: 2rem;
+      height: 2rem;
+      top: 1rem;
+      right: 1rem; }
+
+a:hover {
+  cursor: none; }
+
+@media (max-width: 1000px) {
+  body {
+    cursor: default; }
+  #titlebox {
+    width: 95vw;
+    text-align: center;
+    color: white;
+    -webkit-perspective: 1000px;
+            perspective: 1000px; }
+    #titlebox .spinner {
+      width: 95vw;
+      left: 0vw; }
+    #titlebox svg {
+      display: none; }
+  #titletext {
+    width: 98vw;
+    text-align: center;
+    color: white;
+    -webkit-perspective: 1000px;
+            perspective: 1000px; }
+    #titletext .title {
+      margin-top: 25vh;
+      font-size: 19vw;
+      line-height: 15vw;
+      -webkit-transform: rotateY(-30deg) translateX(-2vw);
+              transform: rotateY(-30deg) translateX(-2vw); }
+    #titletext .subtitle {
+      font-size: 3.8vw;
+      -webkit-transform: rotateY(0deg) translateX(-2vw);
+              transform: rotateY(0deg) translateX(-2vw); }
+    #titletext .author {
+      font-size: 12vw;
+      line-height: 10vw;
+      -webkit-transform: rotateY(40deg) translateX(-5vw);
+              transform: rotateY(40deg) translateX(-5vw); }
+  #main {
+    position: relative;
+    padding-top: 100vh; }
+    #main #cursor {
+      display: none; }
+    #main p {
+      width: 90vw;
+      left: 3vw;
+      margin-bottom: 2rem;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      letter-spacing: 1px;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
+    #main .image {
+      position: -webkit-sticky;
+      position: sticky;
+      float: none;
+      width: 85vw;
+      right: 0; }
+    #main .i1 {
+      height: 68vw;
+      top: -58vw; }
+    #main .i2 {
+      height: 88.5vw;
+      top: -78.5vw; }
+    #main .i3 {
+      height: 58vw;
+      top: -48vw; }
+    #main .i4 {
+      height: 115.5vw;
+      top: -105.5vw; }
+    #main .i5 {
+      height: 85vw;
+      top: -75vw; }
+    #main .i6 {
+      height: 115.5vw;
+      top: -105.5vw; }
+    #main .i7 {
+      height: 64.5vw;
+      top: -54.5vw; }
+    #main .i8 {
+      height: 78vw;
+      top: -68vw; }
+    #main .i9 {
+      height: 70vw;
+      top: -60vw; }
+    #main .poem {
+      position: relative;
+      float: none;
+      width: 85vw;
+      height: auto;
+      left: 5vw;
+      top: 0.5rem;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      text-align: left;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 0.5vw 1vw; }
+      #main .poem span:first-of-type {
+        font-weight: 900; }
+    #main .poem:hover {
+      -webkit-transform: none;
+              transform: none; }
+    #main .underpoem {
+      position: relative;
+      width: 85vw;
+      -webkit-filter: none;
+              filter: none; }
+    #main .underpoem:hover {
+      -webkit-filter: none;
+              filter: none; }
+    #main img {
+      width: 85vw;
+      left: 5.5vw;
+      height: auto; }
+    #main #poembox {
+      background-color: white; }
+      #main #poembox .bigpoem {
+        -webkit-columns: initial;
+                columns: initial;
+        overflow: scroll; } }
+
+.sqs-svg-icon--wrapper {
+  cursor: none; }
+
+html .sqs-block.sqs-block-html .sqs-block-content {
+  cursor: none; }
+
+header {
+  -webkit-filter: url(#redfilter);
+          filter: url(#redfilter); }
+
+footer {
+  -webkit-filter: url(#redfilter);
+          filter: url(#redfilter); }
+
+.mobile-bar-wrapper {
+  -webkit-filter: url(#redfilter);
+          filter: url(#redfilter); }
+
+.overlay-nav-container {
+  -webkit-filter: url(#redfilter);
+          filter: url(#redfilter); }
+
+.overflow-wrapper {
+  overflow: visible;
+  background-color: #fff0; }
