@@ -2,10 +2,16 @@
     <meta charset="utf-8">
     <title>Reflector</title>
     <meta name="description" content="">
-    <link href="style.css" rel="stylesheet" media="all"> </head>
+    <link href="style.css" rel="stylesheet" media="all">
+    <link href="/normalize.css" rel="stylesheet" media="all">
+    <link href="/seamhome.css" rel="stylesheet" media="all">
+</head>
 
 <body>
     <div id="ratiomodal"><em>Reflector</em> is best viewed in landscape: please rotate your device.</div>
+    <a href="/">
+        <div id="seamhome"><img src="/s/seamicon.png" /></div>
+    </a>
     <div class="page landscape" id="p1">
         <div class="title">
             <span class="reflector">REFLECTOR</span>
@@ -288,5 +294,6 @@
         $(window).resize(function() {
             ratioTrigger()
         })
+
     </script>
 </body>
