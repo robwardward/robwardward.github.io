@@ -43,7 +43,7 @@
   font-weight: 700;
   font-size: 9.5vw;
   line-height: 11vw;
-  margin: 22.5vh 0 20vh 0; }
+  padding: 22.5vh 0 10vh 0; }
   #titlebox .title::before {
     content: ">";
     color: #757575; }
