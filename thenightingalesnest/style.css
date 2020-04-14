@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700|Cormorant+Upright:500,700");
+body {
+  background-image: url(/s/paper.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat; }
+
+#main {
+  position: relative;
+  width: 100%;
+  padding-top: 70vh;
+  background-attachment: fixed;
+  background-repeat: repeat; }
+
+#mobsheet {
+  display: none; }
+
+#title {
+  position: fixed;
+  width: 100%;
+  top: 10vh;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500; }
+  #title .bird {
+    position: fixed;
+    top: 10%;
+    left: 13%;
+    width: 30%;
+    border: 5px solid #2c2c2c; }
+    #title .bird img {
+      max-width: 100%; }
+  #title .title {
+    position: fixed;
+    top: 12.5%;
+    left: 33%; }
+    #title .title span {
+      font-size: 6vw;
+      background: linear-gradient(-90deg, #ffff4c, #f8fc5d, #ffff4c);
+      background-position: 0 0.2em;
+      background-repeat: repeat-x;
+      background-size: 1em 1.2em; }
+  #title .subtitle1 {
+    position: absolute;
+    top: 100%;
+    left: 22%; }
+    #title .subtitle1 span {
+      background: none;
+      font-size: 2.5vw; }
+  #title .subtitle2 {
+    position: absolute;
+    top: 140%;
+    left: 22%; }
+    #title .subtitle2 span {
+      background: none;
+      font-size: 2vw;
+      font-family: "Cormorant Upright", serif; }
+
+#essay {
+  position: absolute;
+  width: 55vw;
+  margin: 0 0 0 2.5vw;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.9); }
+
+#poemwrapper {
+  width: 32.5vw;
+  height: 70vh;
+  margin: 0 0 0 62.5vw;
+  padding: 0.5em;
+  border: 5px solid #2c2c2c;
+  background: rgba(255, 255, 255, 0.9); }
+
+#poem {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none; }
+  #poem::-webkit-scrollbar {
+    width: 0 !important; }
+
+.poemwrappermove {
+  position: absolute; }
+
+.poemwrapperfix {
+  position: fixed;
+  top: 50; }
+
+#reset {
+  position: absolute;
+  left: calc(100% - 3em);
+  top: 1em;
+  z-index: 4;
+  opacity: 0; }
+  #reset svg {
+    width: 2em; }
+
+.default, .poetry, #essay .first,
+#essay .indented {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: #2c2c2c; }
+
+.poetry {
+  font-family: "Cormorant Upright", serif;
+  line-height: 2em; }
+
+.poetryindent {
+  padding-left: 2em; }
+
+#essay .first,
+#essay .indented {
+  margin-bottom: 1em; }
+
+.indented {
+  text-indent: 2em; }
+
+.critcite {
+  background: linear-gradient(#ffff4c, #ffff4c);
+  background-position: 0 0.9em;
+  background-repeat: repeat-x;
+  background-size: 3em 0.6em; }
+  .critcite:hover {
+    background-position: 0 0.2em;
+    background-size: 1em 1.2em; }
+  .critcite a {
+    color: #2c2c2c;
+    text-decoration: none; }
+  .critcite a:hover {
+    text-decoration: none; }
+
+@media (max-width: 1000px) {
+  #main {
+    padding-top: 60vh; }
+  #poemwrapper {
+    position: fixed;
+    margin: 0 0 0 100vw;
+    top: 2vh;
+    width: 87vw;
+    height: 90vh;
+    z-index: 2; }
+  #mobsheet {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 100vw;
+    top: 0;
+    background-color: white;
+    z-index: 2; }
+  #essay {
+    width: 90vw;
+    margin: 0; }
+  #title {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500; }
+    #title .bird {
+      position: fixed;
+      top: 10%;
+      left: 30%;
+      width: 60%;
+      border: 5px solid #2c2c2c; }
+      #title .bird img {
+        max-width: 100%; }
+    #title .title {
+      position: fixed;
+      top: 38%;
+      left: 5%; }
+      #title .title span {
+        font-size: 9vw;
+        background: linear-gradient(-90deg, #ffff4c, #f8fc5d, #ffff4c);
+        background-position: 0 0.2em;
+        background-repeat: repeat-x;
+        background-size: 1em 1.2em; }
+    #title .subtitle1 {
+      position: absolute;
+      top: 160%;
+      left: 33%;
+      width: 100%; }
+      #title .subtitle1 span {
+        background: none;
+        font-size: 5vw; }
+    #title .subtitle2 {
+      position: absolute;
+      top: 210%;
+      left: 33%;
+      width: 100%; }
+      #title .subtitle2 span {
+        background: none;
+        font-size: 5vw;
+        font-family: "Cormorant Upright", serif; }
+  #reset {
+    left: 87vw;
+    top: 4vh; } }
