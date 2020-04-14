@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Averia+Serif+Libre:300,300i");
+body {
+  margin: 0;
+}
+
+#titlebox {
+  width: 100vw;
+  height: auto;
+  margin-bottom: -8vw;
+  font-family: "Averia Gruesa Libre", monospace;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+#titlebox .titleimage img {
+  width: 100vw;
+  height: auto;
+}
+
+#titlebox .title {
+  position: absolute;
+  left: 32vw;
+  top: 32.5vw;
+  font-size: 3.5vw;
+  letter-spacing: 0.25vw;
+}
+
+#titlebox .author {
+  position: absolute;
+  left: 73vw;
+  top: 22vw;
+  font-size: 2vw;
+  letter-spacing: 0.1vw;
+}
+
+#titlebox .illustrator {
+  position: absolute;
+  left: 73.2vw;
+  top: 41.2vw;
+  font-size: 1.5vw;
+  letter-spacing: 0.1vw;
+}
+
+.entry {
+  width: 60vw;
+  margin-left: 20vw;
+}
+
+.entry .entrytitle {
+  display: block;
+  font-family: "Averia Gruesa Libre", monospace;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 2.2vw;
+  letter-spacing: 0.1vw;
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-bottom-style: solid;
+  border-bottom-width: 0.2vw;
+}
+
+.entry .entrybody {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  letter-spacing: 0.075vw;
+  text-align: justify;
+}
+
+.entry .entrybody .quote {
+  font-size: 1.25vw;
+  line-height: 2vw;
+  width: 55vw;
+  margin: 2.5vw;
+}
+
+.entry .entrybody .ref {
+  background: rgba(0, 0, 0, 0.075);
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.entry .entrybody .ref:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.redog {
+  width: 48vw;
+}
+
+.doom {
+  width: 48vw;
+  margin-left: 32vw;
+}
+
+.refbox {
+  position: fixed;
+  width: 60vw;
+  left: 20vw;
+  bottom: 0vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top-color: rgba(0, 0, 0, 0.9);
+  border-top-style: solid;
+  border-top-width: 0.2vw;
+  padding: 1vw 0;
+  font-family: "Averia Serif Libre", serif;
+  text-align: center;
+  font-size: 1.25vw;
+  line-height: 2vw;
+  z-index: 5;
+}
+
+.showref {
+  display: block;
+}
+
+.hideref {
+  display: none;
+}
+
+.illus {
+  position: relative;
+  z-index: -1;
+}
+
+.one img {
+  width: 100vw;
+  margin-top: -38vw !important;
+  margin-bottom: -15.5vw !important;
+}
+
+.oneb img {
+  width: 50vw;
+  margin-left: 42vw !important;
+  margin-top: -8vw !important;
+  margin-bottom: -28vw !important;
+}
+
+.two img {
+  width: 78vw;
+  margin-left: 6vw !important;
+  margin-top: -18vw !important;
+  margin-bottom: -14vw !important;
+}
+
+.three img {
+  width: 60vw;
+  margin-left: 17vw !important;
+  margin-top: -21vw !important;
+  margin-bottom: -13vw !important;
+}
+
+.four img {
+  width: 50vw;
+  margin-top: -8vw !important;
+  margin-bottom: 0vw !important;
+}
+
+.five img {
+  width: 50vw;
+  margin-left: 50vw !important;
+  margin-top: -13vw !important;
+  margin-bottom: -15vw !important;
+}
+
+.six img {
+  width: 100vw;
+  margin-bottom: -24vw !important;
+}
+
+.sixb img {
+  width: 18vw;
+  float: right;
+}
+
+.sevena img {
+  width: 8vw;
+  float: left;
+  margin-top: 0.5vw !important;
+  margin-left: 15vw !important;
+}
+
+.sevenb img {
+  width: 48vw;
+  float: right;
+  padding-left: 2vw !important;
+  margin-top: 10vw !important;
+}
+
+.eight img {
+  width: 78vw;
+  margin-top: -11vw !important;
+  margin-bottom: -19.5vw !important;
+}
+
+.nine img {
+  width: 100vw;
+  margin-top: -7vw !important;
+  margin-bottom: -6vw !important;
+}
+
+.ten img {
+  width: 100vw;
+  margin-top: -21vw !important;
+  margin-bottom: -4vw !important;
+}
+
+.tena img {
+  width: 30vw;
+  margin-top: 6vw !important;
+  float: right;
+  padding-left: 2vw !important;
+}
+
+.eleven img {
+  width: 30vw;
+  margin-top: 4vw !important;
+  float: left;
+}
+
+.thirteen img {
+  width: 30vw;
+  margin-left: 35vw !important;
+  margin-top: -9vw !important;
+  margin-bottom: -7vw !important;
+}
+
+.fourteen img {
+  width: 100vw;
+  margin-top: -16vw !important;
+  margin-bottom: -3vw !important;
+}
+
+.fifteen img {
+  width: 30vw;
+  margin-left: 33vw !important;
+  margin-top: -9vw !important;
+  margin-bottom: -7vw !important;
+}
+
+.sixteen img {
+  width: 50vw;
+  margin-left: 50vw !important;
+  margin-top: -30vw !important;
+  margin-bottom: -20vw !important;
+}
+
+.seventeen img {
+  width: 100vw;
+  margin-top: -22vw !important;
+  margin-bottom: -36vw !important;
+}
+
+.eighteen img {
+  width: 100vw;
+  margin-top: -18vw !important;
+  margin-bottom: -2vw !important;
+}
+
+.nineteen img {
+  width: 35vw;
+  margin: -10vw 0vw -16vw 59vw !important;
+  opacity: 0.9;
+}
+
+.twenty img {
+  width: 100vw;
+  margin-bottom: 10vw !important;
+}
+
+@media (max-width: 1000px) {
+  #titlebox {
+    overflow-y: hidden;
+    margin-bottom: 5vw;
+  }
+  #titlebox .titleimage img {
+    min-width: 200vw;
+  }
+  #titlebox .title {
+    left: 47vw;
+    top: 64vw;
+    font-size: 9vw;
+    letter-spacing: 0.5vw;
+  }
+  #titlebox .author {
+    left: 47vw;
+    top: 37vw;
+    font-size: 5vw;
+    letter-spacing: 0.3vw;
+  }
+  #titlebox .illustrator {
+    left: 47vw;
+    top: 93vw;
+    font-size: 4vw;
+    letter-spacing: 0.2vw;
+  }
+  .entry {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  .entry .entrytitle {
+    font-size: 5vw;
+    letter-spacing: 0.3vw;
+    -webkit-transform: translateX(0vw) translateY(1.2vw);
+            transform: translateX(0vw) translateY(1.2vw);
+    border-bottom-width: 0.4vw;
+    margin-bottom: 1.5vw;
+  }
+  .entry .entrybody {
+    font-size: 2.5vw;
+    line-height: 6vw;
+    letter-spacing: 0.1vw;
+  }
+  .entry .entrybody .quote {
+    font-size: 1.5vw;
+    line-height: 4vw;
+    width: 75vw;
+    margin: 2.5vw;
+  }
+  .refbox {
+    width: 100vw;
+    left: 0vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-width: 0.4vw;
+    padding: 3vw 0;
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+  .one img {
+    width: 100vw;
+    margin-top: -45vw !important;
+    margin-bottom: -11vw !important;
+  }
+  .oneb img {
+    width: 50vw;
+    margin-left: 42vw !important;
+    margin-top: -14vw !important;
+    margin-bottom: -20vw !important;
+  }
+  .two img {
+    width: 100vw;
+    margin-left: 0vw !important;
+    margin-top: -25vw !important;
+    margin-bottom: -24vw !important;
+  }
+  .three img {
+    width: 95vw;
+    margin-left: 0vw !important;
+    margin-top: -35vw !important;
+    margin-bottom: -20vw !important;
+  }
+  .four img {
+    width: 75vw;
+    margin-top: -2vw !important;
+    margin-bottom: -1vw !important;
+  }
+  .five img {
+    width: 70vw;
+    margin-left: 30vw !important;
+    margin-top: -23vw !important;
+    margin-bottom: -20vw !important;
+  }
+  .six img {
+    width: 100vw;
+    margin-top: -1vw !important;
+    margin-bottom: -15vw !important;
+  }
+  .sixb img {
+    width: 18vw;
+    float: right;
+    margin-top: -12vw !important;
+  }
+  .sevena img {
+    width: 8vw;
+    float: left;
+    margin-top: 2.5vw !important;
+    margin-left: 10vw !important;
+  }
+  .sevenb img {
+    display: none;
+  }
+  .eight img {
+    width: 75vw;
+    margin-left: 17vw !important;
+    margin-top: -2vw !important;
+    margin-bottom: -9vw !important;
+  }
+  .nine img {
+    width: 100vw;
+    margin-top: -8vw !important;
+    margin-bottom: -8vw !important;
+  }
+  .ten img {
+    width: 100vw;
+    margin-top: -22vw !important;
+    margin-bottom: -4vw !important;
+  }
+  .tena img {
+    width: 40vw;
+    margin-left: 60vw !important;
+    margin-top: 4vw !important;
+    float: none;
+    padding-left: 0vw !important;
+  }
+  .eleven img {
+    width: 83vw;
+    margin-left: 10vw !important;
+    margin-top: -30vw !important;
+    margin-bottom: -25vw !important;
+    float: none;
+  }
+  .thirteen img {
+    width: 60vw;
+    margin-left: 18vw !important;
+    margin-top: -18vw !important;
+    margin-bottom: -8vw !important;
+  }
+  .fourteen img {
+    width: 100vw;
+    margin-top: -25vw !important;
+    margin-bottom: -4vw !important;
+  }
+  .fifteen img {
+    width: 80vw;
+    margin-left: 6vw !important;
+    margin-top: -18vw !important;
+    margin-bottom: -15vw !important;
+  }
+  .sixteen img {
+    width: 70vw;
+    margin-left: 30vw !important;
+    margin-top: -30vw !important;
+    margin-bottom: -26vw !important;
+  }
+  .seventeen img {
+    width: 100vw;
+    margin-top: -22vw !important;
+    margin-bottom: -36vw !important;
+  }
+  .eighteen img {
+    width: 100vw;
+    margin-top: -23vw !important;
+    margin-bottom: -3vw !important;
+  }
+  .nineteen img {
+    width: 60vw;
+    margin: -16vw 0vw -26vw 40vw !important;
+    opacity: 0.9;
+  }
+  .twenty img {
+    width: 100vw;
+    margin-top: 0vw !important;
+    margin-bottom: 10vw !important;
+  }
+}
+
+.overflow-wrapper {
+  background-color: transparent;
+}
+
+[class*=sqs-col] .sqs-block {
+  padding-left: 0px;
+  padding-right: 0px;
+}
