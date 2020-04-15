@@ -33,3 +33,23 @@ body {
     transition: background-color 0.5s; }
   .essaybox a:hover {
     background-color: rgba(255, 255, 255, 0.9); }
+
+@media (max-width: 1000px) {
+  body {
+    background-size: auto 100vh; }
+  .titlebox {
+    line-height: 8vw; }
+    .titlebox .author {
+      font-size: 6vw; }
+    .titlebox .title {
+      font-size: 10vw; }
+  .essaybox {
+    width: 85vw;
+    left: 5vw;
+    font-size: 3vw;
+    line-height: 4vw; }
+    .essaybox .seperator {
+      font-size: 10vw;
+      line-height: 14vw; }
+    .essaybox a {
+      background-color: rgba(255, 255, 255, 0.8); } }
