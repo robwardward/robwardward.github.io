@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Eczar:700|Lora:400,400i,700,700i|Permanent+Marker");
+.madespace {
+  font-family: monospace;
+  font-size: 10px; }
+
+#frame {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 0 50px -10px gray; }
+
+video {
+  width: 100%;
+  height: auto;
+  max-height: 100%; }
+
+#main {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  padding: 0;
+  font-family: 'Lora', serif;
+  text-align: justify;
+  color: #1a1a1a;
+  line-height: 2em;
+  font-size: 1.2em; }
+
+#main .break {
+  position: relative;
+  margin: 1em 0 0.5em 0;
+  font-family: 'Eczar', serif;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 700; }
+
+#main .fionaBig {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  font-size: 12vw;
+  line-height: 12vw; }
+
+#main .fionaWide {
+  position: relative;
+  font-size: 3em;
+  font-weight: 700; }
+
+#main .fionaWide .F {
+  position: absolute;
+  left: 10%; }
+
+#main .fionaWide .I {
+  position: absolute;
+  left: 30%; }
+
+#main .fionaWide .O {
+  position: absolute;
+  left: 50%; }
+
+#main .fionaWide .N {
+  position: absolute;
+  left: 70%; }
+
+#main .fionaWide .A {
+  position: absolute;
+  left: 90%; }
+
+#main img {
+  position: relative;
+  display: block;
+  width: 75%;
+  margin: 5% auto;
+  box-shadow: 0 0 50px 0px gray; }
+
+#main .hw img {
+  box-shadow: 0 0 0 0 gray; }
+
+#main .notes {
+  font-family: 'Eczar', serif;
+  font-size: 3em;
+  text-align: center; }
+
+#main p {
+  position: relative; }
+
+#main .poem {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  line-height: 1.5em; }
+
+#main .poem .title {
+  font-family: 'Eczar', serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 1em; }
+
+#main .poem .IVL {
+  position: relative;
+  display: inline-block;
+  width: 85%;
+  float: left; }
+
+#main .poem .IVR {
+  position: relative;
+  float: right;
+  left: -7.5%; }
+
+#main .prose {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  font-weight: 700;
+  line-height: 1.5em; }
+
+#main .quote {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  text-align: justify; }
+
+#main .quote2 {
+  position: relative;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  font-style: italic; }
+
+#main .qcite {
+  position: relative;
+  text-align: right;
+  font-size: smaller; }
+
+#main .tab {
+  position: relative;
+  display: inline-block;
+  width: 4em; }
+
+#main .KBQ {
+  position: relative; }
+
+#main .KBEm {
+  position: relative;
+  color: black; }
+
+#main .HKbox {
+  display: block;
+  text-align: center; }
+
+#main .HKbox img {
+  display: inline-block;
+  margin: 0; }
+
+#main .HKbox .HK3 {
+  width: 30%; }
+
+#main .HKbox .HK4 {
+  width: 30%; }
+
+#main .HKbox .HK5 {
+  width: 30%; }
+
+#main .HKbox .HK6 {
+  width: 75%; }
+
+#main .HKbox .HK7 {
+  width: 20%; }
+
+#main .HKbox .HK8 {
+  width: 20%; }
+
+#main .YTbox {
+  position: relative;
+  width: 400px;
+  margin: 5% auto;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 50px -5px gray;
+  font-size: 0.8em;
+  line-height: 1.1em;
+  text-align: left; }
+
+#main .YTbox .YTico {
+  position: absolute; }
+
+#main .YTbox .YTico img {
+  width: 50px;
+  box-shadow: 0 0 0 0 gray; }
+
+#main .YTbox .YTname {
+  position: relative;
+  margin: 0 0 0 60px;
+  padding: 0 0 0 0;
+  color: #3399ff;
+  font-family: sans-serif;
+  font-weight: bold; }
+
+#main .YTbox .YTcomment {
+  position: relative;
+  width: 325px;
+  margin: 1em 0 0 60px;
+  font-family: sans-serif; }
+
+@media screen and (max-width: 1000px) {
+  #frame {
+    box-shadow: none;
+    width: 95%; }
+  #titlebox {
+    width: 100%; }
+  #titlebox .titletext {
+    padding: 10% 0;
+    font-size: 20vw;
+    line-height: 16vw; }
+  #titlebox .subtitletext,
+  #titlebox .authtitletext {
+    font-size: 3.5vw;
+    padding: 48% 0; }
+  #titlebox .authtitletext {
+    padding: 0; }
+  #main {
+    width: 100%;
+    font-size: 1em; }
+  #main .fionaWide {
+    font-size: 2em; }
+  #main img {
+    width: 100%;
+    box-shadow: 0 0 25px -5px gray; }
+  #main .YTbox {
+    width: 250px;
+    box-shadow: 0 0 30px -5px gray; }
+  #main .YTbox .YTico img {
+    width: 40px; }
+  #main .YTbox .YTname {
+    margin: 0 0 0 50px; }
+  #main .YTbox .YTcomment {
+    width: 190px;
+    margin: 1em 0 0 50px; } }

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
+body {
+  background-image: url("/s/CABstars.jpg");
+  background-size: 100vw;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Cormorant Garamond', serif; }
+
+.titlebox {
+  line-height: 6vw;
+  padding: 5vw 0 10vw 0; }
+  .titlebox .author {
+    font-size: 3vw; }
+  .titlebox .title {
+    font-size: 9vw; }
+
+.essaybox {
+  position: relative;
+  width: 40vw;
+  left: 10vw;
+  text-align: justify;
+  font-size: 1.5vw;
+  line-height: 2.5vw; }
+  .essaybox .seperator {
+    text-align: center;
+    font-size: 5vw;
+    line-height: 5vw; }
+  .essaybox a {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    transition: background-color 0.5s; }
+  .essaybox a:hover {
+    background-color: rgba(255, 255, 255, 0.9); }
