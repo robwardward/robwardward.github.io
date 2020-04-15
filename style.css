@@ -19,12 +19,21 @@
     position: fixed; }
     #containergrid .logo img {
       width: 75vw; }
+  #containergrid .logocover {
+    position: fixed;
+    width: 65vw;
+    height: 12vw;
+    left: 32vw;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+    opacity: 0; }
   #containergrid .impressum {
     grid-area: impressum;
     display: grid;
     padding: 2vw;
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     text-align: center;
     line-height: 2vw; }
     #containergrid .impressum p {
@@ -34,13 +43,14 @@
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    z-index: 5; }
     #containergrid .menuscroller a {
       color: white;
       -webkit-text-decoration-line: none;
               text-decoration-line: none; }
     #containergrid .menuscroller .menuitem {
-      width: 65vw;
+      width: 62.5vw;
       height: 8vw;
       margin: 2.5vw;
       padding: 1vw;
@@ -147,7 +157,7 @@
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 9fr;
-    grid-template-rows: 20vh auto;
+    grid-template-rows: 20.2vh auto;
     grid-template-areas: "logo impressum" "logo menu";
     background-image: url("/s/dottedline90.png");
     background-size: auto 50vh;
@@ -160,6 +170,12 @@
         width: 50vh;
         transform: rotate(90deg) translateY(-100%);
         transform-origin: top left; }
+    #containergrid .logocover {
+      display: none; }
+    #containergrid .impressum {
+      padding: 1vw 5vw;
+      font-size: 2vw;
+      line-height: 2.5vw; }
     #containergrid .menuscroller {
       grid-area: menu;
       width: 100%;
@@ -167,8 +183,18 @@
       overflow-y: scroll;
       overflow-x: auto; }
       #containergrid .menuscroller .menuitem {
-        width: 85vw;
-        height: 20vw;
-        margin: 2.5vw;
-        background-color: black;
-        border-radius: 0.5vw; } }
+        width: 80vw;
+        height: 15vw;
+        margin: 2.5vw 5vw;
+        border-radius: 0.5vw;
+        background-size: 85vw; }
+        #containergrid .menuscroller .menuitem .title {
+          font-size: 5.5vw; }
+        #containergrid .menuscroller .menuitem .author {
+          font-size: 3vw; }
+      #containergrid .menuscroller .menuitem:hover {
+        background-color: rgba(0, 0, 0, 0.75); }
+      #containergrid .menuscroller .spacer {
+        display: none; }
+      #containergrid .menuscroller .anenglishtowelshdictionaryoffeministterms .title {
+        font-size: 4vw; } }
